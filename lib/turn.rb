@@ -44,5 +44,7 @@ def turn(board)
 
   if valid_move?(board, index) == true
     move(board, index)
+  else
+    turn(board)
   end
 end
